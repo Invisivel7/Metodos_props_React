@@ -10,7 +10,12 @@ function Form(){
             
             <form onSubmit={cadastrarUsuario}>
                 <div>
+                    <label htmlFor="name">Nome: </label>
                     <input type="text" placeholder="Digite o seu nome" />
+                </div>
+                <div>
+                    <label htmlFor="password">Senha: </label>
+                    <input type="password" placeholder="Digite a sua senha" />
                 </div>
                 <div>
                     <input type="submit" value="cadastrar" />
@@ -19,3 +24,5 @@ function Form(){
         </div>
     )
 }
+
+export default Form
